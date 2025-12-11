@@ -1,6 +1,6 @@
 ## Hi, I'm **Veinsure Lee** 👋
 
-I'm a student and aspiring engineer from **Shuozhou, Shanxi**, currently studying at **Beijing University of Posts and Telecommunications** (BUPT). I enjoy learning by building, experimenting, and exploring tools and technologies—especially when I can turn ideas into real working projects.
+I'm a student and aspiring engineer from **Shanxi**, currently studying at **Beijing University of Posts and Telecommunications** (BUPT). I enjoy learning by building, experimenting, and exploring tools and technologies—especially when I can turn ideas into real working projects.
 
 Right now, I’m still early on my journey. I'm working to improve my skills in areas like **Git**, **network architecture**, and **English technical reading**. It’s not always easy, but I believe deeply in *"Where there’s a will, there’s a way."*  
 I remind myself to keep learning, keep thinking, and keep writing things down.
