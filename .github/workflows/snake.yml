@@ -22,9 +22,10 @@ jobs:
           # 使用仓库所有者的 GitHub 用户名（自动获取，无需手动改）
           github_user_name: ${{ github.repository_owner }}
           # 生成的 SVG 文件存放位置（直接放仓库根目录，避免路径问题）
+          # 暗色版需加 ?palette=github-dark，否则和亮色版配色相同
           outputs: |
             github-snake.svg
-            github-snake-dark.svg
+            github-snake-dark.svg?palette=github-dark
           # 可选：自定义贪吃蛇颜色（可根据喜好修改）
           color_snake: "#6495ED"    # 蛇身颜色（天蓝色）
           color_dots: "#F5F5F5"     # 点的颜色（浅灰色）

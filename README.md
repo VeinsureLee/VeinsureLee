@@ -23,10 +23,11 @@ I remind myself to keep learning, keep thinking, and keep writing things down.
 
 ---
 
+<!-- 贡献图贪吃蛇由 .github/workflows/snake.yml 每日生成，首次使用请在 GitHub Actions 中手动运行一次 -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="./github-snake.svg" />
-  <img alt="GitHub Snake" src="./github-snake.svg" width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="github-snake.svg" />
+  <img alt="GitHub Snake" src="github-snake.svg" width="100%" />
 </picture>
 
 ---
