@@ -10,6 +10,8 @@ on:
 jobs:
   generate-snake:
     runs-on: ubuntu-latest  # 使用 GitHub 提供的 Ubuntu 云环境
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true  # 提前适配 Node 24，消除弃用警告
     steps:
       # 第一步：拉取当前仓库代码
       - name: Checkout repository code
@@ -21,14 +23,11 @@ jobs:
         with:
           # 使用仓库所有者的 GitHub 用户名（自动获取，无需手动改）
           github_user_name: ${{ github.repository_owner }}
-          # 生成的 SVG 文件存放位置（直接放仓库根目录，避免路径问题）
-          # 暗色版需加 ?palette=github-dark，否则和亮色版配色相同
+          # 生成的 SVG 文件存放位置；颜色通过 outputs 的 query 参数设置（snk v3 仅支持 entryPoint/args/github_user_name/github_token/outputs）
+          # 亮色：天蓝蛇身 + 浅灰系 5 档贡献点；暗色：使用预设 github-dark
           outputs: |
-            github-snake.svg
+            github-snake.svg?color_snake=#6495ED&color_dots=#F5F5F5,#E8E8E8,#D8D8D8,#C0C0C0,#A0A0A0
             github-snake-dark.svg?palette=github-dark
-          # 可选：自定义贪吃蛇颜色（可根据喜好修改）
-          color_snake: "#6495ED"    # 蛇身颜色（天蓝色）
-          color_dots: "#F5F5F5"     # 点的颜色（浅灰色）
 
       # 第三步：将生成的 SVG 文件提交并推回仓库
       - name: Push SVG files to repository
