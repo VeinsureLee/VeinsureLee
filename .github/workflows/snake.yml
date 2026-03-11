@@ -7,11 +7,13 @@ on:
     - cron: "0 0 * * *"  # 北京时间每天 8 点更新（UTC+8）
   workflow_dispatch:     # 手动触发开关，方便测试
 
+# 提前适配 Node 24，消除 "Node.js 20 actions are deprecated" 警告
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   generate-snake:
     runs-on: ubuntu-latest  # 使用 GitHub 提供的 Ubuntu 云环境
-    env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true  # 提前适配 Node 24，消除弃用警告
     steps:
       # 第一步：拉取当前仓库代码
       - name: Checkout repository code
