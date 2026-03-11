@@ -1,11 +1,11 @@
 # GitHub Snake 贪吃蛇生成工作流配置
 name: GitHub Snake
 
-# 触发条件：每天 UTC 0 点自动运行 + 手动触发
+# 触发条件：每 8 小时自动运行 + 手动触发
 on:
   schedule:
-    - cron: "0 0 * * *"  # 北京时间每天 8 点更新（UTC+8）
-  workflow_dispatch:     # 手动触发开关，方便测试
+    - cron: "0 */8 * * *"  # 每 8 小时整点（UTC 0:00、8:00、16:00，约北京时间 8:00、16:00、0:00）
+  workflow_dispatch:       # 手动触发开关，方便测试
 
 # 提前适配 Node 24，消除 "Node.js 20 actions are deprecated" 警告
 env:
@@ -29,10 +29,9 @@ jobs:
         with:
           # 使用仓库所有者的 GitHub 用户名（自动获取，无需手动改）
           github_user_name: ${{ github.repository_owner }}
-          # 生成的 SVG 文件存放位置；颜色通过 outputs 的 query 参数设置（snk v3 仅支持 entryPoint/args/github_user_name/github_token/outputs）
-          # 亮色：天蓝蛇身 + 浅灰系 5 档贡献点；暗色：使用预设 github-dark
+          # 亮色/暗色双主题：默认绿色贡献 + 白底（github-light）与深色预设（github-dark）
           outputs: |
-            github-snake.svg?color_snake=#6495ED&color_dots=#F5F5F5,#E8E8E8,#D8D8D8,#C0C0C0,#A0A0A0
+            github-snake.svg?palette=github-light
             github-snake-dark.svg?palette=github-dark
 
       # 第三步：将生成的 SVG 文件提交并推回仓库
