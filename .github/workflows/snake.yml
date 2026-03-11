@@ -11,6 +11,10 @@ on:
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
+# 允许 workflow 把生成的 SVG 提交并推回仓库（解决 403 Permission denied）
+permissions:
+  contents: write
+
 jobs:
   generate-snake:
     runs-on: ubuntu-latest  # 使用 GitHub 提供的 Ubuntu 云环境
