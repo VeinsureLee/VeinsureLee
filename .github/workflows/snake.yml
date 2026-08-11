@@ -2,7 +2,7 @@ name: Generate Snake
 
 on:
   schedule:
-    - cron: "0 */8 * * *"  # 每 6 小时更新一次
+    - cron: "0 */8 * * *" # Every 8 hours (three times per day)
   workflow_dispatch:
   push:
     branches:
@@ -11,9 +11,14 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: contribution-snake
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -25,7 +30,6 @@ jobs:
           outputs: |
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
-            dist/github-snake.gif
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
