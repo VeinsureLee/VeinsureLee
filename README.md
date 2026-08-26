@@ -56,15 +56,19 @@ Technologies in each category are ordered by how frequently I use them, which al
     <tr>
       <td><strong>Development Tools</strong></td>
       <td>
-        <code>CodeG</code>&nbsp;
+        <img src="https://raw.githubusercontent.com/xintaofei/codeg/main/public/icon.svg" width="22" alt="CodeG" /> <code>CodeG</code>&nbsp;
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jetbrains/jetbrains-original.svg" width="22" alt="JetBrains IDEs" /> <code>JetBrains IDEs</code>&nbsp;
-        <code>Zed</code>&nbsp;
+        <img src="https://raw.githubusercontent.com/zed-industries/zed/main/crates/zed/resources/app-icon.png" width="22" alt="Zed" /> <code>Zed</code>&nbsp;
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" width="22" alt="VS Code" /> <code>VS Code</code>
       </td>
     </tr>
     <tr>
       <td><strong>Coding Agents</strong></td>
-      <td><code>Claude Code</code>&nbsp; <code>Pi</code>&nbsp; <code>Codex</code></td>
+      <td>
+        <img src="https://cdn.simpleicons.org/claudecode/D97757" width="22" alt="Claude Code" /> <code>Claude Code</code>&nbsp;
+        <img src="https://pi.dev/logo-auto.svg" width="22" alt="Pi" /> <code>Pi</code>&nbsp;
+        <img src="https://api.iconify.design/logos:openai-icon.svg" width="22" alt="Codex" /> <code>Codex</code>
+      </td>
     </tr>
   </tbody>
 </table>
