@@ -28,7 +28,7 @@ Technologies in each category are ordered by how frequently I use them, which al
   <tbody>
     <tr>
       <td><strong>Backend</strong></td>
-      <td><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" width="22" alt="Java" /> <code>Java</code></td>
+      <td><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg" width="22" alt="Go" /> <code>Go</code>&nbsp; <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" width="22" alt="Java" /> <code>Java</code></td>
     </tr>
     <tr>
       <td><strong>Frontend</strong></td>
@@ -41,9 +41,9 @@ Technologies in each category are ordered by how frequently I use them, which al
     <tr>
       <td><strong>Desktop &amp; Systems</strong></td>
       <td>
+        <img src="https://cdn.simpleicons.org/rust/CE422B" width="22" alt="Rust" /> <code>Rust</code>&nbsp;
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" width="22" alt="C++" /> <code>C++</code>&nbsp;
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" width="22" alt="C" /> <code>C</code>&nbsp;
-        <img src="https://cdn.simpleicons.org/rust/CE422B" width="22" alt="Rust" /> <code>Rust</code>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" width="22" alt="C" /> <code>C</code>
       </td>
     </tr>
     <tr>
